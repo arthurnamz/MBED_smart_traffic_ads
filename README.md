@@ -8,5 +8,6 @@ The time is shown on a billboard on the side of the building. The pedestrian or 
 When the traffic light becomes RED after 30 seconds, cars come to a stop and wait for the signal to revert back to YELLOW. For approximately 1 minute, pedestrians and cyclists are permitted to cross the street. During that particular period, the billboard will display an advertisement that is targeted specifically at car drivers.
 When pedestrians and cyclists are permitted to cross, a sound should be played to alert disabled people that they are permitted to cross.
 
-
-
+# Feature 1: Blinking LED
+![6az11m](https://user-images.githubusercontent.com/44365037/161216076-1b0dbdf1-8ac5-4427-9ce7-ab307beba792.gif)
+This fearture is introducing us into this project. we are using MBED for simmulating. It act as Hello world where it only blinks the LED
