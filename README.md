@@ -10,3 +10,4 @@ When pedestrians and cyclists are permitted to cross, a sound should be played t
 
 # Feature 1: Blinking LED
 ![6az11m](https://user-images.githubusercontent.com/44365037/161216076-1b0dbdf1-8ac5-4427-9ce7-ab307beba792.gif)
+This fearture is introducing us into this project. we are using MBED for simmulating. It act as Hello world where it only blinks the LED
