@@ -9,5 +9,4 @@ When the traffic light becomes RED after 30 seconds, cars come to a stop and wai
 When pedestrians and cyclists are permitted to cross, a sound should be played to alert disabled people that they are permitted to cross.
 
 # Feature 1: Blinking LED
-
-![Screenshot 2022-04-01 092006](https://user-images.githubusercontent.com/44365037/161215181-0a543612-013d-4574-9c91-6803ea09031d.gif)
+![6az11m](https://user-images.githubusercontent.com/44365037/161216076-1b0dbdf1-8ac5-4427-9ce7-ab307beba792.gif)
