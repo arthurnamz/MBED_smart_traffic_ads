@@ -13,10 +13,12 @@
   4. The resistor and jumpers*/
 
 //Start of Task two of the first day lab
-/*This task introduced us on how to use arduino Uno to control the LED. where we learnt how to control the LED on the arduino board. we used the pin 13 since it has already have LED.
-The following are the components given to control the LED;
-  1. The Arduino uno R3
-  2. The USB to connect the arduino to the laptop*/
+  /*
+  This task introduced us on how to use arduino Uno to control the LED. where we learnt how to control the LED on the arduino board. we used the pin 13 since it has already have LED.
+  The following are the components given to control the LED;
+    1. The Arduino uno R3
+    2. The USB to connect the arduino to the laptop
+    */
 
 void setup() {
  pinMode(13,OUTPUT);
@@ -32,7 +34,17 @@ void loop() {
 }
 //End of Task two of the first day lab
 
-//Start of Task two of the first day lab
+//Start of Task three of the first day lab
+  /*
+This task I was asked to use the arduino board to control the LED but this time instead of using the LED which are embedded  on the arduino board I will using the LED through the breadboard. 
+we used the pin 13, pin 12 and pin 12 and all of them were the output.
+  The following are the components given to control the LED;
+    1. The Arduino uno R3
+    2. The USB to connect the arduino to the laptop
+    3. Four LED(green, yellow, red, white) 
+    4. The breadboard at this moment breadboard will use the power supply from the arduino board.
+    5. The resistors and jumpers
+  */
 void setup() {
  pinMode(13,OUTPUT);
  pinMode(12,OUTPUT);
@@ -71,3 +83,40 @@ void loop() {
   white_LED();
   blue_LED();
 }
+//End of Task three of the first day lab
+
+//Start of Task four of the first day lab
+  /*
+This task I was asked to use the arduino board to control the LED but this time it will be depending on the Light Dependent Resistor to detect the light intensity, then based on the light intensity which you are obtaining you will put the conditional statement to control the LED to to turn or off. 
+Mine the minimum light intensity was 20 then I set that if the light intensity is below 20 then turn on the LED and if it is 20 and above the LED should turn off. 
+we used the pin 11 as the output.
+  The following are the components given to control the LED;
+    1. The Arduino uno R3
+    2. The USB to connect the arduino to the laptop
+    3. Red LED 
+    4. The breadboard at this moment breadboard will use the power supply from the arduino board.
+    5. The resistors and jumpers
+    6. Light Dependent Resistor
+  */
+int LDR_value = A0; // voltage divider analog pin
+int LEDpin = 12; // LED on  pin 12
+int min_value = 20; // minimum light intensity
+int light_intensity;
+
+ void setup() {
+ pinMode(12,OUTPUT);
+ Serial.begin(9600);
+}
+void loop() {
+  light_intensity = analogRead(LDR_value);
+  Serial.println(light_intensity);
+  if(light_intensity < min_value){
+    digitalWrite(12,HIGH);
+    Serial.println("LED ON");
+  }
+  else{
+    digitalWrite(12,LOW);
+    Serial.println("LED OFF");
+  }
+}
+//End of Task four of the first day lab
